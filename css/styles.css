@@ -462,14 +462,13 @@ ul, ol {
 body {
   font-size: 1rem;
   line-height: 1.5;
-  font-family: "Raleway", sans-serif;
+  font-family: Verdana, Geneva, sans-serif;
   text-align: left;
-  margin: 0;
 }
 
 h1,
 h2 {
-  font-family: "Bree Serif", serif;
+  font-family: Georgia, Times, TimesNewRoman, serif;
 }
 
 p {
@@ -478,6 +477,15 @@ p {
 
 a {
   text-decoration: none;
+}
+div .title {
+  font-size: 1em;
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: #2d3945;
+  padding: 1em;
+  margin: 0 0 1em;
 }
 
 /*# sourceMappingURL=styles.css.map */
