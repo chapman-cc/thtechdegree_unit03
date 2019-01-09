@@ -460,11 +460,10 @@ ul, ol {
 }
 
 body {
-  color: #343434;
   font-size: 1rem;
   line-height: 1.5;
   font-family: "Raleway", sans-serif;
-  text-align: center;
+  text-align: left;
   margin: 0;
 }
 
@@ -478,11 +477,7 @@ p {
 }
 
 a {
-  color: #278da4;
   text-decoration: none;
-}
-a:hover {
-  color: #b13c69;
 }
 
 /*# sourceMappingURL=styles.css.map */

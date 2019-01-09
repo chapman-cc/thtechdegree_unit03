@@ -4,15 +4,22 @@
 
 // Colors
 $white: #fff;
+$black: #000;
 
-$color-primary: #278da4; // teal
-$color-secondary: #b13c69; // dark violet red
-$color-accent: #eeea72;
-$color-shade: #eee;
+$color-1: #278da4;
+$color-1-light10: lighten($color-1, 10);
+$color-1-light20: lighten($color-1, 20);
+$color-1-light50: lighten($color-1, 50);
+$color-1-light90: lighten($color-1, 90);
+$color-1-dark10: darken($color-1, 10);
+$color-1-dark20: darken($color-1, 20);
+$color-1-dark50: darken($color-1, 50);
+$color-1-dark90: darken($color-1, 90);
 
-$color-text: #343434;
-$color-bg: #3acec2;
-$color-bg-light: #009fe1;
+$color-1-gray: grayscale($color-1);
+$color-1-complement: complement($color-1);
+$color-1-invert: invert($color-1);
+
 
 // Fonts
 $font-stack-primary: 'Raleway', sans-serif;
