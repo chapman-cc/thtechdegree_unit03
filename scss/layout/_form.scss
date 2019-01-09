@@ -1,0 +1,33 @@
+form {
+    @include center-container-90;
+    h2 {
+        font-size: 1.25em;
+    }
+    label {
+        color: $color-1-light20;
+        font-family: $font-stack-serif;
+        font-size: 0.8em;
+        display: block;
+        margin: 1em 0 .2em;
+    }
+    input {
+        background-color: rgba($color-1-light50, 0.3);
+        padding: 1em;
+        border-style: hidden;
+        border-radius: 10px;
+
+        width: 100%;
+
+        &::placeholder {
+            color: $color-1-gray;
+            text-align: right;
+            font: oblique 0.8em $font-stack-serif;
+        }
+        &:focus {
+            border: 2px solid darkblue;
+        }
+    }
+    .zip {
+        width: 60%;
+    }
+}

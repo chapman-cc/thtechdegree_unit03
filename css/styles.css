@@ -469,6 +469,7 @@ body {
 h1,
 h2 {
   font-family: Georgia, Times, TimesNewRoman, serif;
+  letter-spacing: -1px;
 }
 
 p {
@@ -491,13 +492,12 @@ a {
 .intro {
   width: 90%;
   margin: 0 auto;
-  border-bottom: 5px double #000;
+  border-bottom: 5px double #2d3945;
 }
 
 .signup-title {
   color: #2d3945;
   font-size: 1.25em;
-  letter-spacing: -1px;
   text-align: center;
 }
 
@@ -506,6 +506,40 @@ a {
   font-family: Georgia, Times, TimesNewRoman, serif;
   letter-spacing: -1px;
   text-align: center;
+}
+
+form {
+  width: 90%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+form h2 {
+  font-size: 1.25em;
+}
+form label {
+  color: #556c83;
+  font-family: Georgia, Times, TimesNewRoman, serif;
+  font-size: 0.8em;
+  display: block;
+  margin: 1em 0 0.2em;
+}
+form input {
+  background-color: rgba(170, 185, 199, 0.3);
+  padding: 1em;
+  border-style: hidden;
+  border-radius: 10px;
+  width: 100%;
+}
+form input::placeholder {
+  color: #393939;
+  text-align: right;
+  font: oblique 0.8em Georgia, Times, TimesNewRoman, serif;
+}
+form input:focus {
+  border: 2px solid darkblue;
+}
+form .zip {
+  width: 60%;
 }
 
 /*# sourceMappingURL=styles.css.map */
