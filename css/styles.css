@@ -478,7 +478,7 @@ p {
 a {
   text-decoration: none;
 }
-div .title {
+.title {
   font-size: 1em;
   color: white;
   text-align: center;
@@ -486,6 +486,26 @@ div .title {
   background-color: #2d3945;
   padding: 1em;
   margin: 0 0 1em;
+}
+
+.intro {
+  width: 90%;
+  margin: 0 auto;
+  border-bottom: 5px double #000;
+}
+
+.signup-title {
+  color: #2d3945;
+  font-size: 1.25em;
+  letter-spacing: -1px;
+  text-align: center;
+}
+
+.signup-p {
+  color: #aab9c7;
+  font-family: Georgia, Times, TimesNewRoman, serif;
+  letter-spacing: -1px;
+  text-align: center;
 }
 
 /*# sourceMappingURL=styles.css.map */
