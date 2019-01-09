@@ -9,14 +9,13 @@
 body {
   font-size: 1rem;
   line-height: 1.5;
-  font-family: $font-stack-primary;
+  font-family: $font-stack-sansserif;
   text-align: left;
-  margin: 0;
 }
 
 h1,
 h2 {
-  font-family: $font-stack-secondary;
+  font-family: $font-stack-serif;
 }
 
 p {

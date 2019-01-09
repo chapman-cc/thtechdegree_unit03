@@ -6,7 +6,7 @@
 $white: #fff;
 $black: #000;
 
-$color-1: #278da4;
+$color-1: #2d3945;
 $color-1-light10: lighten($color-1, 10);
 $color-1-light20: lighten($color-1, 20);
 $color-1-light50: lighten($color-1, 50);
@@ -21,9 +21,10 @@ $color-1-complement: complement($color-1);
 $color-1-invert: invert($color-1);
 
 
+
 // Fonts
-$font-stack-primary: 'Raleway', sans-serif;
-$font-stack-secondary: 'Bree Serif', serif;
+$font-stack-sansserif: Verdana,Geneva,sans-serif;
+$font-stack-serif: Georgia,Times,TimesNewRoman,serif;
 
 // Layout
 $max-width: 1000px;
