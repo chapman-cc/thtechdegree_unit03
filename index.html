@@ -30,12 +30,12 @@
 
             <div class="input">
                 <label for="full_name" class="label">Full Name</label>
-                <input type="text" class="full-name" name="full_name">
+                <input type="text" class="full-name" name="full_name" placeholder="Required" required>
             </div>
 
             <div class="input">
                 <label for="email" class="label">Email Address</label>
-                <input type="email" class="email" name="email">
+                <input type="email" class="email" name="email" placeholder="Required" required>
             </div>
 
             <div class="input">
@@ -132,12 +132,11 @@
         <h2>Newsletter</h2>
         <div class="news-select">
             <p>Select the newsletters you would like to receive</p>
-
-
-                <input type="checkbox" name="html_news">
-                <label for="html_news">
-                HTML News
+            <!-- <label for="html_news">HTML News
             </label>
+            <input type="checkbox" name="html_news">
+
+
 
             <label for="css_news">
                 <input type="checkbox" name="css_news">
@@ -153,6 +152,7 @@
         <h3>Newsletter format
             <div class="news-format">
                 <!-- TODO: radio box can multiselect -->
+            <!--
                 <label for="html_format">
                     <input type="radio" name="html_format" value="HTML">
                     HTML
@@ -162,19 +162,20 @@
                     Plain Text
                 </label>
             </div>
-        </h3>
+        </h3>-->
 
-        <p>Other topics you'd like to hear about</p>
-        <textarea name="suggestions" cols="30" rows="10" wrap="soft"></textarea>
+            <p>Other topics you'd like to hear about</p>
+            <textarea name="suggestions" rows="5" wrap="soft"></textarea>
 
-        <button type="submit" name="submit_button">
-            Sign Up
-        </button>
-
-        <p>Copyright The Code Review</p>
-
-
+            <button type="submit" name="submit_button">
+                Sign Up
+            </button>
+        </div>
     </form>
+    <p class="copyright">Copyright The Code Review</p>
+
+
+
 
 
 </body>

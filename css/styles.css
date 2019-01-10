@@ -503,10 +503,15 @@ a {
 }
 
 p {
-  color: #aab9c7;
+  color: #556c83;
   font-family: Georgia, Times, TimesNewRoman, serif;
   letter-spacing: -1px;
   text-align: center;
+}
+p.copyright {
+  font-size: 0.9em;
+  font-style: oblique;
+  color: #aab9c7;
 }
 
 form {
@@ -530,9 +535,9 @@ form label {
 }
 form input {
   background-color: rgba(170, 185, 199, 0.3);
-  padding: 1em;
   border-style: hidden;
   border-radius: 10px;
+  padding: 1em;
   width: 100%;
 }
 form input::placeholder {
@@ -542,15 +547,16 @@ form input::placeholder {
 }
 form input:focus {
   border: 2px solid darkblue;
+  border-style: inset;
 }
 form input.zip {
   width: 60%;
 }
 form select {
   background-color: rgba(170, 185, 199, 0.3);
-  padding: 1em;
   border-style: hidden;
   border-radius: 10px;
+  padding: 1em;
   width: 100%;
 }
 form select::placeholder {
@@ -560,6 +566,41 @@ form select::placeholder {
 }
 form select:focus {
   border: 2px solid darkblue;
+  border-style: inset;
+}
+form .news-select {
+  width: 95%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+form .news-select p {
+  text-align: left;
+}
+form .news-select textarea {
+  background-color: rgba(170, 185, 199, 0.3);
+  border-style: hidden;
+  border-radius: 10px;
+  width: 100%;
+}
+form .news-select textarea:focus {
+  border: 2px solid darkblue;
+  border-style: inset;
+}
+form .news-select button {
+  display: block;
+  height: 3em;
+  border-style: hidden;
+  border-radius: 10px;
+  color: #fff;
+  background-color: #4ebbb5;
+  margin: 1.5em 0;
+  width: 100%;
+}
+form .news-select button:hover {
+  background-color: #2d7672;
+}
+form .news-select button:active {
+  background-color: #1f514e;
 }
 
 /*# sourceMappingURL=styles.css.map */
