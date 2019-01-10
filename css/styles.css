@@ -527,29 +527,30 @@ form h2 {
   font-size: 1.25em;
 }
 form label {
+  display: block;
   color: #556c83;
   font-family: Georgia, Times, TimesNewRoman, serif;
   font-size: 0.8em;
-  display: block;
   margin: 1em 0 0.2em;
 }
-form input {
+form input.textinput {
+  display: block;
   background-color: rgba(170, 185, 199, 0.3);
   border-style: hidden;
   border-radius: 10px;
   padding: 1em;
   width: 100%;
 }
-form input::placeholder {
+form input.textinput::placeholder {
   color: #393939;
   text-align: right;
   font: oblique 0.8em Georgia, Times, TimesNewRoman, serif;
 }
-form input:focus {
+form input.textinput:focus {
   border: 2px solid darkblue;
   border-style: inset;
 }
-form input.zip {
+form input.textinput.zip {
   width: 60%;
 }
 form select {
@@ -573,20 +574,27 @@ form .news-select {
   max-width: 1000px;
   margin: 0 auto;
 }
-form .news-select p {
+form .news-select label {
+  font-size: 1em;
+}
+form .news-select input[type=checkbox],
+form .news-select input[type=radio] {
+  margin-right: 1em;
+}
+form p {
   text-align: left;
 }
-form .news-select textarea {
+form textarea {
   background-color: rgba(170, 185, 199, 0.3);
   border-style: hidden;
   border-radius: 10px;
   width: 100%;
 }
-form .news-select textarea:focus {
+form textarea:focus {
   border: 2px solid darkblue;
   border-style: inset;
 }
-form .news-select button {
+form button {
   display: block;
   height: 3em;
   border-style: hidden;
@@ -596,10 +604,10 @@ form .news-select button {
   margin: 1.5em 0;
   width: 100%;
 }
-form .news-select button:hover {
+form button:hover {
   background-color: #2d7672;
 }
-form .news-select button:active {
+form button:active {
   background-color: #1f514e;
 }
 
