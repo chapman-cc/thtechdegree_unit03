@@ -609,6 +609,8 @@ form select {
   padding: 1em;
   transition: background 500ms ease-out;
   width: 100%;
+  color: #393939;
+  font: oblique 1em "Merriweather", Georgia, serif;
 }
 form select::placeholder {
   color: #393939;

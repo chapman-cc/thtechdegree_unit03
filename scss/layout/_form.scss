@@ -58,6 +58,9 @@ form {
     select {
         @include input-mixin {
             width: 100%;
+            color: $color-1-gray;
+
+            font: oblique 1em $font-stack-serif;
         }
         @media screen and (min-width: 760px) {
             display: inline-block;
