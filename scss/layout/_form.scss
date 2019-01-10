@@ -2,17 +2,38 @@ form {
     @include center-container(90%);
 
     .contact-section {
-        padding-bottom: 3em;
+        padding-bottom: 2em;
         border-bottom: 2px solid $color-1;
+        @media screen and (min-width: 1025px) {
+            margin-bottom: 2em;
+        }
     }
 
     h2 {
         font-size: 1.25em;
     }
 
-    label {
+    .input {
+        @media screen and (min-width: 1025px) {
+            margin-bottom: 1em;
+            display: flex;
+            flex-wrap: nowrap;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: baseline;
+        }
+    }
+    // ----- Variable for length of input text box for desktop display -----
+    $txtbx-length: 70%;
+    //----------------------------------------------------------------------
+
+    .label {
         display: block;
         @include label-mixin;
+        @media screen and (min-width: 1025px) {
+            font-size: 1em;
+            width: calc(100% - #{$txtbx-length})
+        }
     };
 
     input.textinput {
@@ -22,7 +43,15 @@ form {
 
             &.zip {
                 width: 60%;
+                @media screen and (min-width: 1025px) {
+                    width: 30%;
+                    margin-right: auto;
+                }
             }
+        }
+        @media screen and (min-width: 1025px) {
+            display: inline-block;
+            width: $txtbx-length;
         }
     }
 
@@ -30,13 +59,23 @@ form {
         @include input-mixin {
             width: 100%;
         }
+        @media screen and (min-width: 1025px) {
+            display: inline-block;
+            width: $txtbx-length;
+        }
     }
 
     .news-select {
         @include center-container(95%);
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: baseline;
 
         label {
             font-size: 1em;
+            margin: 0.1em 0;
         }
 
         input[type=checkbox],
@@ -59,5 +98,10 @@ form {
         @include button-mixin;
         margin: 1.5em 0;
         width: 100%;
+        @media screen and (min-width: 1025px) {
+            width: 50%;
+            margin-left: auto;
+            margin-right: auto;
+        }
     }
 }

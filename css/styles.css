@@ -482,7 +482,7 @@ a {
 }
 .intro {
   width: 90%;
-  max-width: 1024px;
+  max-width: 720px;
   margin: 0 auto;
 }
 
@@ -503,7 +503,7 @@ a {
 
 .intro {
   width: 90%;
-  max-width: 1024px;
+  max-width: 720px;
   margin: 0 auto;
   border-bottom: 5px double #2d3945;
 }
@@ -533,22 +533,43 @@ p.copyright {
 
 form {
   width: 90%;
-  max-width: 1024px;
+  max-width: 720px;
   margin: 0 auto;
 }
 form .contact-section {
-  padding-bottom: 3em;
+  padding-bottom: 2em;
   border-bottom: 2px solid #2d3945;
+}
+@media screen and (min-width: 1025px) {
+  form .contact-section {
+    margin-bottom: 2em;
+  }
 }
 form h2 {
   font-size: 1.25em;
 }
-form label {
+@media screen and (min-width: 1025px) {
+  form .input {
+    margin-bottom: 1em;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+}
+form .label {
   display: block;
   color: #556c83;
   font-family: Georgia, Times, TimesNewRoman, serif;
   font-size: 0.8em;
   margin: 1em 0 0.2em;
+}
+@media screen and (min-width: 1025px) {
+  form .label {
+    font-size: 1em;
+    width: calc(100% - 70%);
+  }
 }
 form input.textinput {
   display: block;
@@ -564,11 +585,22 @@ form input.textinput::placeholder {
   font: oblique 0.8em Georgia, Times, TimesNewRoman, serif;
 }
 form input.textinput:focus {
-  border: 2px solid darkblue;
-  border-style: inset;
+  outline: 2px solid darkblue;
 }
 form input.textinput.zip {
   width: 60%;
+}
+@media screen and (min-width: 1025px) {
+  form input.textinput.zip {
+    width: 30%;
+    margin-right: auto;
+  }
+}
+@media screen and (min-width: 1025px) {
+  form input.textinput {
+    display: inline-block;
+    width: 70%;
+  }
 }
 form select {
   background-color: rgba(170, 185, 199, 0.3);
@@ -583,16 +615,27 @@ form select::placeholder {
   font: oblique 0.8em Georgia, Times, TimesNewRoman, serif;
 }
 form select:focus {
-  border: 2px solid darkblue;
-  border-style: inset;
+  outline: 2px solid darkblue;
+}
+@media screen and (min-width: 1025px) {
+  form select {
+    display: inline-block;
+    width: 70%;
+  }
 }
 form .news-select {
   width: 95%;
-  max-width: 1024px;
+  max-width: 720px;
   margin: 0 auto;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: baseline;
 }
 form .news-select label {
   font-size: 1em;
+  margin: 0.1em 0;
 }
 form .news-select input[type=checkbox],
 form .news-select input[type=radio] {
@@ -608,8 +651,7 @@ form textarea {
   width: 100%;
 }
 form textarea:focus {
-  border: 2px solid darkblue;
-  border-style: inset;
+  outline: 2px solid darkblue;
 }
 form button {
   display: block;
@@ -626,6 +668,13 @@ form button:hover {
 }
 form button:active {
   background-color: #1f514e;
+}
+@media screen and (min-width: 1025px) {
+  form button {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
