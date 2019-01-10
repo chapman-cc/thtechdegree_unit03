@@ -35,20 +35,29 @@ form {
     .news-select {
         @include center-container(95%);
 
-        p {
-            text-align: left;
+        label {
+            font-size: 1em;
         }
 
-        textarea {
-            @include textbox-mixin {
-                width: 100%;
-            };
+        input[type=checkbox],
+        input[type=radio] {
+            margin-right: 1em;
         }
+    }
 
-        button {
-            @include button-mixin;
-            margin: 1.5em 0;
+    p {
+        text-align: left;
+    }
+
+    textarea {
+        @include textbox-mixin {
             width: 100%;
-        }
+        };
+    }
+
+    button {
+        @include button-mixin;
+        margin: 1.5em 0;
+        width: 100%;
     }
 }
