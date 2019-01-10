@@ -11,10 +11,12 @@ form {
     }
 
     label {
+        display: block;
         @include label-mixin;
     };
 
-    input {
+    input.textinput {
+        display: block;
         @include input-mixin {
             width: 100%;
 
