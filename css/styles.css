@@ -546,5 +546,20 @@ form input:focus {
 form input .zip {
   width: 60%;
 }
+form select {
+  background-color: rgba(170, 185, 199, 0.3);
+  padding: 1em;
+  border-style: hidden;
+  border-radius: 10px;
+  width: 100%;
+}
+form select::placeholder {
+  color: #393939;
+  text-align: right;
+  font: oblique 0.8em Georgia, Times, TimesNewRoman, serif;
+}
+form select:focus {
+  border: 2px solid darkblue;
+}
 
 /*# sourceMappingURL=styles.css.map */

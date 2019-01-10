@@ -21,4 +21,7 @@ form {
             width: 60%;
         }
     }
+    select {
+        @include input-temp;
+    }
 }

@@ -4,6 +4,7 @@
     font-size: 0.8em;
     display: block;
     margin: 1em 0 0.2em;
+    @content;
 }
 @mixin input-temp {
     background-color: rgba($color-1-light50, 0.3);
@@ -21,4 +22,5 @@
     &:focus {
         border: 2px solid darkblue;
     }
+    @content;
 }
