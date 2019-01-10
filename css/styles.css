@@ -473,10 +473,6 @@ h2 {
   font-family: "Merriweather", Georgia, serif;
 }
 
-p {
-  margin-bottom: 1.25em;
-}
-
 a {
   text-decoration: none;
 }
@@ -524,6 +520,9 @@ p {
   font-family: "Merriweather", Georgia, serif;
   text-align: center;
 }
+p.signup-p {
+  font-size: 0.8em;
+}
 p.copyright {
   font-size: 0.9em;
   font-style: oblique;
@@ -544,8 +543,20 @@ form .contact-section {
     margin-bottom: 2em;
   }
 }
-form h2 {
+form fieldset {
+  border: hidden;
+  padding: 0;
+}
+form legend {
   font-size: 1.25em;
+  font-family: "Merriweather", Georgia, serif;
+  font-weight: bold;
+  padding: 1em 0 0.5em;
+}
+@media screen and (min-width: 760px) {
+  form legend {
+    padding-bottom: 1em;
+  }
 }
 @media screen and (min-width: 760px) {
   form .input {
@@ -624,6 +635,10 @@ form select:focus {
     width: 70%;
   }
 }
+form select {
+  color: #393939;
+  font: oblique 1em "Merriweather", Georgia, serif;
+}
 form .news-select {
   width: 95%;
   max-width: 720px;
@@ -665,6 +680,8 @@ form button {
   height: 3em;
   border-style: hidden;
   border-radius: 10px;
+  font-family: "Merriweather", Georgia, serif;
+  letter-spacing: 0.3em;
   color: #fff;
   background-color: #4ebbb5;
   transition: background 1s ease-out;
