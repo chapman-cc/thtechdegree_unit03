@@ -38,11 +38,18 @@
     @content;
 }
 @mixin button-mixin {
+    $butt-color: $color-2;
     display: block;
     height: 3em;
     border-style: hidden;
     border-radius: 10px;
     color: $white;
-    background-color: $color-2;
+    background-color: $butt-color;
+    &:hover {
+        background-color: darken($butt-color, 20%);
+    }
+    &:active {
+        background-color: darken($butt-color, 30%);
+    }
     @content
 }
