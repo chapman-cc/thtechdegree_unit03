@@ -12,6 +12,7 @@
     border-style: hidden;
     border-radius: 10px;
     padding: 1em;
+    transition: background 500ms ease-out;
 
     &::placeholder {
         color: $color-1-gray;
@@ -20,7 +21,7 @@
     }
 
     &:focus {
-        outline: 2px solid darkblue;
+        background-color: rgba($color-1-light50, 1);
     }
     @content;
 }
@@ -28,9 +29,14 @@
     background-color: rgba($color-1-light50, 0.3);
     border-style: hidden;
     border-radius: 10px;
-
+    transition: background 500ms ease-out;
+    &::placeholder {
+        color: $color-1-gray;
+        text-align: left;
+        font: oblique 1em $font-stack-serif;
+    }
     &:focus {
-        outline: 2px solid darkblue;
+        background-color: rgba($color-1-light50, 1);
     }
     @content;
 }
@@ -42,6 +48,7 @@
     border-radius: 10px;
     color: $white;
     background-color: $butt-color;
+    transition: background 1s ease-out;
     &:hover {
         background-color: darken($butt-color, 20%);
     }
