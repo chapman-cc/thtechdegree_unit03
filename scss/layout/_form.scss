@@ -1,5 +1,5 @@
 form {
-    @include center-container-90;
+    @include center-container(90%);
 
     .contact-section {
         padding-bottom: 3em;
@@ -11,25 +11,47 @@ form {
     }
 
     label {
-        @include label-temp;
+        @include label-mixin;
     };
 
     input {
-        @include input-temp {
+        @include input-mixin {
+            width: 100%;
+
             &.zip {
                 width: 60%;
             }
         }
     }
+
     select {
-        @include input-temp;
+        @include input-mixin {
+            width: 100%;
+        }
     }
 
     .news-select {
-        width: 90%;
+        @include center-container(95%);
 
         p {
             text-align: left;
+        }
+
+        textarea {
+            @include textbox-mixin {
+                width: 100%;
+            };
+        }
+
+        button {
+            display: block;
+            height: 3em;
+            border-style: hidden;
+            border-radius: 10px;
+            color: $white;
+            background-color: $color-2;
+            margin: 1.5em 0;
+            width: 100%;
         }
     }
 }

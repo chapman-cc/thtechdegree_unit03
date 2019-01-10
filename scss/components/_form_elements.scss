@@ -1,4 +1,6 @@
-@mixin label-temp {
+// ----- Base input and textarea ----------
+// ----------
+@mixin label-mixin {
     color: $color-1-light20;
     font-family: $font-stack-serif;
     font-size: 0.8em;
@@ -6,12 +8,11 @@
     margin: 1em 0 0.2em;
     @content;
 }
-@mixin input-temp {
+@mixin input-mixin {
     background-color: rgba($color-1-light50, 0.3);
-    padding: 1em;
     border-style: hidden;
     border-radius: 10px;
-    width: 100%;
+    padding: 1em;
 
     &::placeholder {
         color: $color-1-gray;
@@ -21,8 +22,18 @@
 
     &:focus {
         border: 2px solid darkblue;
+        border-style: inset;
     }
     @content;
+}
+@mixin textbox-mixin {
+    background-color: rgba($color-1-light50, 0.3);
+    border-style: hidden;
+    border-radius: 10px;
 
-
+    &:focus {
+        border: 2px solid darkblue;
+        border-style: inset;
+    }
+    @content;
 }
