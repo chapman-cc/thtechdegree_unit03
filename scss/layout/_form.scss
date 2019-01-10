@@ -25,11 +25,11 @@ form {
         @include input-temp;
     }
 
-    // .news-select {
-    //     width: 90%;
-    //
-    //     p {
-    //         text-align: left;
-    //     }
-    // }
+    .news-select {
+        width: 90%;
+
+        p {
+            text-align: left;
+        }
+    }
 }
