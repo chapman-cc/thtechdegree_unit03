@@ -64,6 +64,11 @@ form {
             width: $txtbx-length;
         }
     }
+    select {
+        color: $color-1-gray;
+
+        font: oblique 1em $font-stack-serif;
+    }
 
     .news-select {
         @include center-container(95%);
