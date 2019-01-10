@@ -2,8 +2,8 @@
 //  Mixins
 // =========================================
 
-@mixin center-container-90 {
-  width: 90%;
+@mixin center-container($percent) {
+  width: $percent;
   max-width: $max-width;
   margin: 0 auto;
 }
