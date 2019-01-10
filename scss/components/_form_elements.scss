@@ -20,8 +20,7 @@
     }
 
     &:focus {
-        border: 2px solid darkblue;
-        border-style: inset;
+        outline: 2px solid darkblue;
     }
     @content;
 }
@@ -31,8 +30,7 @@
     border-radius: 10px;
 
     &:focus {
-        border: 2px solid darkblue;
-        border-style: inset;
+        outline: 2px solid darkblue;
     }
     @content;
 }
