@@ -21,10 +21,14 @@ $color-1-complement: complement($color-1);
 $color-1-invert: invert($color-1);
 
 $color-2: #4ebbb5;
+$color-3: #003366;
 
 // Fonts
+
+@import url('https://fonts.googleapis.com/css?family=Merriweather:300,300i,400,700');
+
 $font-stack-sansserif: Verdana,Geneva,sans-serif;
-$font-stack-serif: Georgia,Times,TimesNewRoman,serif;
+$font-stack-serif: "Merriweather", Georgia,serif;
 
 // Layout
 $max-width: 720px;
