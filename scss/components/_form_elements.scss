@@ -37,3 +37,12 @@
     }
     @content;
 }
+@mixin button-mixin {
+    display: block;
+    height: 3em;
+    border-style: hidden;
+    border-radius: 10px;
+    color: $white;
+    background-color: $color-2;
+    @content
+}
