@@ -1,5 +1,9 @@
 form {
     @include center-container-90;
+    .contact-section {
+        padding-bottom: 3em;
+        border-bottom: 2px solid $color-1;
+    }
     h2 {
         font-size: 1.25em;
     }
