@@ -25,6 +25,11 @@ p {
     font-family: $font-stack-serif;
     letter-spacing: -1px;
     text-align: center;
+    &.copyright {
+        font-size: 0.9em;
+        font-style: oblique;
+        color: $color-1-light50;
+    }
 }
 // * {
 //     border: 1px red solid;
