@@ -133,45 +133,43 @@
         <h2>Newsletter</h2>
         <div class="news-select">
             <p>Select the newsletters you would like to receive</p>
-            <!-- <label for="html_news">HTML News
+            <label for="html_news">
+                <input type="checkbox" name="html_news">
+                HTML News
             </label>
-            <input type="checkbox" name="html_news">
-
-
-
             <label for="css_news">
                 <input type="checkbox" name="css_news">
                 CSS News
             </label>
-
             <label for="js_news">
                 <input type="checkbox" name="js_news">
                 Javascript News
             </label>
-        </div>
 
-        <h3>Newsletter format
+
+            <p>Newsletter format</p>
             <div class="news-format">
                 <!-- TODO: radio box can multiselect -->
-            <!--
-                <label for="html_format">
-                    <input type="radio" name="html_format" value="HTML">
+
+                <label>
+                    <input type="radio" name="format" value="html_format">
                     HTML
                 </label>
-                <label for="plain_text">
-                    <input type="radio" name="plain_text" value="xxx">
+                <label>
+                    <input type="radio" name="format" value="plaintxt_format">
                     Plain Text
                 </label>
             </div>
-        </h3>-->
-
-            <p>Other topics you'd like to hear about</p>
-            <textarea name="suggestions" rows="5" wrap="soft"></textarea>
-
-            <button type="submit" name="submit_button">
-                Sign Up
-            </button>
         </div>
+
+
+        <p>Other topics you'd like to hear about</p>
+        <textarea name="suggestions" rows="5" wrap="soft"></textarea>
+
+        <button type="submit" name="submit_button">
+            Sign Up
+        </button>
+
     </form>
     <p class="copyright">Copyright The Code Review</p>
 
