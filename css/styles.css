@@ -543,7 +543,7 @@ form input::placeholder {
 form input:focus {
   border: 2px solid darkblue;
 }
-form .zip {
+form input .zip {
   width: 60%;
 }
 

@@ -9,12 +9,12 @@
         'utilities/helpers';
 
 // Base Styles
-@import 'base/reset',
-        'base/base';
+@import 'base/reset';
+@import 'base/base';
 
 // Component styles
 @import 'components/form_elements';
 
 // Layout Styles
-@import "layout/header",
-        "layout/form";
+@import "layout/header";
+@import "layout/form";
