@@ -480,6 +480,12 @@ p {
 a {
   text-decoration: none;
 }
+.intro {
+  width: 90%;
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
 .title {
   font-size: 1em;
   color: white;
@@ -489,11 +495,22 @@ a {
   padding: 1em;
   margin: 0 0 1em;
 }
+@media only screen and (min-width: 1024px) {
+  .title {
+    font-size: 1.5em;
+  }
+}
 
 .intro {
   width: 90%;
+  max-width: 1024px;
   margin: 0 auto;
   border-bottom: 5px double #2d3945;
+}
+@media only screen and (min-width: 1024px) {
+  .intro {
+    padding-bottom: 2em;
+  }
 }
 
 .signup-title {
@@ -503,7 +520,7 @@ a {
 }
 
 p {
-  color: #556c83;
+  color: #aab9c7;
   font-family: Georgia, Times, TimesNewRoman, serif;
   letter-spacing: -1px;
   text-align: center;
@@ -516,7 +533,7 @@ p.copyright {
 
 form {
   width: 90%;
-  max-width: 1000px;
+  max-width: 1024px;
   margin: 0 auto;
 }
 form .contact-section {
@@ -571,7 +588,7 @@ form select:focus {
 }
 form .news-select {
   width: 95%;
-  max-width: 1000px;
+  max-width: 1024px;
   margin: 0 auto;
 }
 form .news-select label {
