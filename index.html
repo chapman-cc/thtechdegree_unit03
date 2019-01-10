@@ -21,9 +21,10 @@
     </header>
 
     <form action="#" class="form" id="form" method="post" name="newsletter_form" target="_self" autocomplete="on">
-        <div class="contact-section">
-            <h2 class="form-title">Contact Information</h2>
-
+        <fieldset class="contact-section">
+            <legend class="form-title">Contact Information</legend>
+            <!-- TODO: all input lacks id -->
+            <!-- TODO: the label’s “for” attribute should match the input’s unique id. -->
             <div class="input">
                 <label for="full_name" class="label">Full Name</label>
                 <input type="text" class="textinput full-name" name="full_name" placeholder="Required" required>
@@ -122,47 +123,51 @@
 
             <div class="input">
                 <label for="zip" class="label zip-label1">Zip Code</label>
-                <input type="text" class="textinput zip" name="zip">
+                <input type="text" class="textinput zip" name="zip_code">
             </div>
-        </div>
+        </fieldset>
         <!-- insert border by css -->
-
-        <h2>Newsletter</h2>
-        <div class="news-select">
-            <p>Select the newsletters you would like to receive</p>
-            <label for="html_news">
-                <input type="checkbox" name="news_cat" value="html_news">
-                HTML News
-            </label>
-            <label for="css_news">
-                <input type="checkbox" name="news_cat" value="css_news">
-                CSS News
-            </label>
-            <label for="js_news">
-                <input type="checkbox" name="news_cat" value="js_news">
-                Javascript News
-            </label>
+        <fieldset>
 
 
-            <p>Newsletter format</p>
+            <legend>Newsletter</legend>
+            <div class="news-select">
+                <p>Select the newsletters you would like to receive</p>
+                <label for="html_news">
+                    <input type="checkbox" name="news_cat" value="html_news">
+                    HTML News
+                </label>
+                <label for="css_news">
+                    <input type="checkbox" name="news_cat" value="css_news">
+                    CSS News
+                </label>
+                <label for="js_news">
+                    <input type="checkbox" name="news_cat" value="js_news">
+                    Javascript News
+                </label>
 
-            <label>
-                <input type="radio" name="format" value="html_format">
-                HTML
-            </label>
-            <label>
-                <input type="radio" name="format" value="text_format">
-                Plain Text
-            </label>
-        </div>
 
+                <p>Newsletter format</p>
 
-        <p>Other topics you'd like to hear about</p>
-        <textarea name="suggestions" rows="5" wrap="soft" placeholder="So... I'd think ... "></textarea>
+                <label>
+                    <input type="radio" name="format" value="html_format">
+                    HTML
+                </label>
+                <label>
+                    <input type="radio" name="format" value="text_format">
+                    Plain Text
+                </label>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend style="display: none;">others</legend>
 
-        <button type="submit" name="submit_button">
-            Sign Up
-        </button>
+            <p>Other topics you'd like to hear about</p>
+            <textarea name="suggestions" rows="5" wrap="soft" placeholder="So... I'd think ... "></textarea>
+</fieldset>
+            <button type="submit" name="submit_button">
+                Sign Up
+            </button>
 
     </form>
     <p class="copyright">Copyright The Code Review</p>
