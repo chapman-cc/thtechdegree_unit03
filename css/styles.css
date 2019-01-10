@@ -540,7 +540,7 @@ form .contact-section {
   padding-bottom: 2em;
   border-bottom: 2px solid #2d3945;
 }
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: 760px) {
   form .contact-section {
     margin-bottom: 2em;
   }
@@ -548,7 +548,7 @@ form .contact-section {
 form h2 {
   font-size: 1.25em;
 }
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: 760px) {
   form .input {
     margin-bottom: 1em;
     display: flex;
@@ -565,7 +565,7 @@ form .label {
   font-size: 0.8em;
   margin: 1em 0 0.2em;
 }
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: 760px) {
   form .label {
     font-size: 1em;
     width: calc(100% - 70%);
@@ -590,13 +590,13 @@ form input.textinput:focus {
 form input.textinput.zip {
   width: 60%;
 }
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: 760px) {
   form input.textinput.zip {
     width: 30%;
     margin-right: auto;
   }
 }
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: 760px) {
   form input.textinput {
     display: inline-block;
     width: 70%;
@@ -617,7 +617,7 @@ form select::placeholder {
 form select:focus {
   outline: 2px solid darkblue;
 }
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: 760px) {
   form select {
     display: inline-block;
     width: 70%;
@@ -669,7 +669,7 @@ form button:hover {
 form button:active {
   background-color: #1f514e;
 }
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: 760px) {
   form button {
     width: 50%;
     margin-left: auto;
