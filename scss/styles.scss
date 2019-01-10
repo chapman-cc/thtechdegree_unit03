@@ -6,15 +6,15 @@
 @import 'utilities/variables',
         'utilities/mixins',
         'utilities/functions',
-        'utilities/helpers'
+        'utilities/helpers';
 
 // Base Styles
-        'base/reset',
-        'base/base',
+@import 'base/reset',
+        'base/base';
 
 // Component styles
-        'form_elements'        
+@import 'components/form_elements';
 
 // Layout Styles
-        "layout/header",
+@import "layout/header",
         "layout/form";
