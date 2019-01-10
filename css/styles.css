@@ -502,7 +502,7 @@ a {
   text-align: center;
 }
 
-.signup-p {
+p {
   color: #aab9c7;
   font-family: Georgia, Times, TimesNewRoman, serif;
   letter-spacing: -1px;
@@ -543,7 +543,7 @@ form input::placeholder {
 form input:focus {
   border: 2px solid darkblue;
 }
-form input .zip {
+form input.zip {
   width: 60%;
 }
 form select {

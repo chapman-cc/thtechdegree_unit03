@@ -15,13 +15,21 @@ form {
     };
 
     input {
-        @include input-temp;
-
-        .zip {
-            width: 60%;
+        @include input-temp {
+            &.zip {
+                width: 60%;
+            }
         }
     }
     select {
         @include input-temp;
     }
+
+    // .news-select {
+    //     width: 90%;
+    //
+    //     p {
+    //         text-align: left;
+    //     }
+    // }
 }
