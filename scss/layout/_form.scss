@@ -15,18 +15,18 @@ form {
     fieldset {
         border: hidden;
         padding: 0;
+        margin-top: 1em;
     }
 
     legend {
         color: $color-1;
         font: bold 1.5em $font-stack-serif;
-        padding: 0.83em 0;
-
+        padding-bottom: 1em;
 
         &.legend-small {
             color: $color-1-light50;
             font: 1em $font-stack-serif;
-            padding: 1em 0 0.2em;
+            padding-bottom: 0.2em;
         }
     }
 
