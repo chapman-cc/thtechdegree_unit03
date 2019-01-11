@@ -7,7 +7,7 @@
     margin: 1em 0 0.2em;
     @content;
 }
-@mixin input-mixin ($align: left) {
+@mixin input-mixin {
     background-color: rgba($color-1-light50, 0.3);
     border-style: hidden;
     border-radius: 10px;
@@ -16,7 +16,7 @@
 
     &::placeholder {
         color: $color-1-gray;
-        text-align: $align; // <<<< ------not same
+        text-align: left;
         font: oblique 0.8em $font-stack-serif;
     }
 

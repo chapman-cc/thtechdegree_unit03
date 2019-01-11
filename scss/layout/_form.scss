@@ -48,7 +48,7 @@ form {
 
     input.textinput {
         display: block;
-        @include input-mixin (right) {
+        @include input-mixin {
             width: 100%;
 
             &.zip {
