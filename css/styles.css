@@ -277,8 +277,7 @@ select {
  *    controls in Android 4.
  * 2. Correct the inability to style clickable types in iOS and Safari.
  */
-button,
-html [type=button],
+button, html [type=button],
 [type=reset],
 [type=submit] {
   -webkit-appearance: button;
@@ -288,10 +287,10 @@ html [type=button],
 /**
  * Remove the inner border and padding in Firefox.
  */
-button::-moz-focus-inner,
 [type=button]::-moz-focus-inner,
 [type=reset]::-moz-focus-inner,
-[type=submit]::-moz-focus-inner {
+[type=submit]::-moz-focus-inner,
+button::-moz-focus-inner {
   border-style: none;
   padding: 0;
 }
@@ -299,10 +298,10 @@ button::-moz-focus-inner,
 /**
  * Restore the focus styles unset by the previous rule.
  */
-button:-moz-focusring,
 [type=button]:-moz-focusring,
 [type=reset]:-moz-focusring,
-[type=submit]:-moz-focusring {
+[type=submit]:-moz-focusring,
+button:-moz-focusring {
   outline: 1px dotted ButtonText;
 }
 
@@ -450,7 +449,8 @@ template {
 /**
  * List styles
  */
-ul, ol {
+ol,
+ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
@@ -586,17 +586,14 @@ form input.textinput {
   background-color: rgba(170, 185, 199, 0.3);
   border-style: hidden;
   border-radius: 10px;
-  padding: 1em;
   transition: background 500ms ease-out;
+  padding: 1em;
   width: 100%;
 }
 form input.textinput::placeholder {
   color: #393939;
   text-align: right;
   font: oblique 0.8em "Merriweather", Georgia, serif;
-}
-form input.textinput:focus {
-  background-color: #aab9c7;
 }
 form input.textinput.zip {
   width: 60%;
@@ -617,8 +614,8 @@ form select {
   background-color: rgba(170, 185, 199, 0.3);
   border-style: hidden;
   border-radius: 10px;
-  padding: 1em;
   transition: background 500ms ease-out;
+  padding: 1em;
   width: 100%;
   color: #393939;
   font: oblique 1em "Merriweather", Georgia, serif;
@@ -627,9 +624,6 @@ form select::placeholder {
   color: #393939;
   text-align: right;
   font: oblique 0.8em "Merriweather", Georgia, serif;
-}
-form select:focus {
-  background-color: #aab9c7;
 }
 @media screen and (min-width: 760px) {
   form select {

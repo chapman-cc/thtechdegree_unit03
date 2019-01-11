@@ -8,6 +8,7 @@ form {
             margin-bottom: 2em;
         }
     }
+
     fieldset {
         border: hidden;
         padding: 0;
@@ -18,7 +19,6 @@ form {
         font-family: $font-stack-serif;
         font-weight: bold;
         padding: 1em 0 0.5em;
-
         @media screen and (min-width: 760px) {
             padding-bottom: 1em;
         }
@@ -37,13 +37,12 @@ form {
     // ----- Variable for length of input text box for desktop display -----
     $txtbx-length: 70%;
     //----------------------------------------------------------------------
-
     .label {
         display: block;
         @include label-mixin;
         @media screen and (min-width: 760px) {
             font-size: 1em;
-            width: calc(100% - #{$txtbx-length})
+            width: calc(100% - #{$txtbx-length});
         }
     };
 
@@ -70,7 +69,6 @@ form {
         @include input-mixin {
             width: 100%;
             color: $color-1-gray;
-
             font: oblique 1em $font-stack-serif;
         }
         @media screen and (min-width: 760px) {
@@ -78,9 +76,9 @@ form {
             width: $txtbx-length;
         }
     }
+
     select {
         color: $color-1-gray;
-
         font: oblique 1em $font-stack-serif;
     }
 
