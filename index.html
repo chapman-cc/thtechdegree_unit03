@@ -117,54 +117,49 @@
                         <option value="UM">United States Minor Outlying Islands</option>
                         <option value="VI">Virgin Islands</option>
                     </optgroup>
-
                 </select>
+
             </div>
 
             <div class="input-div">
                 <label for="zip" class="label zip-label1">Zip Code</label>
-                <input type="text" class="textinput zip" name="zip_code">
+                <input type="text" class="textinput zip" id="zip" name="user_zip">
             </div>
         </fieldset>
-        <!-- insert border by css -->
+
+        <h2 class="form-title">Newsletter</h2>
         <fieldset>
 
+            <legend class="legend-small">Select the newsletters you would like to receive</legend>
 
-            <legend>Newsletter</legend>
-            <div class="news-select">
-                <p>Select the newsletters you would like to receive</p>
-                <label for="html_news">
-                    <input type="checkbox" name="news_cat" value="html_news">
-                    HTML News
-                </label>
-                <label for="css_news">
-                    <input type="checkbox" name="news_cat" value="css_news">
-                    CSS News
-                </label>
-                <label for="js_news">
-                    <input type="checkbox" name="news_cat" value="js_news">
-                    Javascript News
-                </label>
+            <input type="checkbox" name="news_cat" id="html_news" value="html_news">
+            <label for="html_news"> HTML News </label><br>
 
+            <input type="checkbox" name="news_cat" id="css_news" value="css_news">
+            <label for="css_news"> CSS News </label><br>
 
-                <p>Newsletter format</p>
+            <input type="checkbox" name="news_cat" id="js_news" value="js_news">
+            <label for="js_news"> Javascript News </label><br>
 
-                <label>
-                    <input type="radio" name="format" value="html_format">
-                    HTML
-                </label>
-                <label>
-                    <input type="radio" name="format" value="text_format">
-                    Plain Text
-                </label>
-            </div>
         </fieldset>
-        <fieldset>
-            <legend style="display: none;">others</legend>
 
-            <p>Other topics you'd like to hear about</p>
+        <fieldset>
+
+            <legend class="legend-small">Newsletter format</legend>
+            <input type="radio" name="user_pref_format" id="html_format" value="html_format">
+            <label for="html_format">HTML</label><br>
+            <input type="radio" name="user_pref_format" id="text_format" value="text_format">
+            <label for="text_format">Plain Text</label><br>
+
+        </fieldset>
+
+        <fieldset>
+            <!-- <legend class="legend-small" style="display: none;">others</legend> -->
+
+            <legend class="legend-small">Other topics you'd like to hear about</legend>
             <textarea name="suggestions" rows="5" wrap="soft" placeholder="So... I'd think ... "></textarea>
         </fieldset>
+
         <button type="submit" name="submit_button">
             Sign Up
         </button>
