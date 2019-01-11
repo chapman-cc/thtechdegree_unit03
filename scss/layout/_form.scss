@@ -17,10 +17,17 @@ form {
         padding: 0;
     }
 
-    .legend-small {
-        color: $color-1-light50;
-        font-family: $font-stack-serif;
-        padding: 1em 0 0.2em;
+    legend {
+        color: $color-1;
+        font: bold 1.5em $font-stack-serif;
+        padding: 0.83em 0;
+
+
+        &.legend-small {
+            color: $color-1-light50;
+            font: 1em $font-stack-serif;
+            padding: 1em 0 0.2em;
+        }
     }
 
     .input-div {

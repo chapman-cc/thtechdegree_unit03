@@ -547,9 +547,14 @@ form fieldset {
   border: hidden;
   padding: 0;
 }
-form .legend-small {
+form legend {
+  color: #2d3945;
+  font: bold 1.5em "Merriweather", Georgia, serif;
+  padding: 0.83em 0;
+}
+form legend.legend-small {
   color: #aab9c7;
-  font-family: "Merriweather", Georgia, serif;
+  font: 1em "Merriweather", Georgia, serif;
   padding: 1em 0 0.2em;
 }
 @media screen and (min-width: 760px) {
