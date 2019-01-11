@@ -547,16 +547,10 @@ form fieldset {
   border: hidden;
   padding: 0;
 }
-form legend {
-  font-size: 1.25em;
+form .legend-small {
+  color: #aab9c7;
   font-family: "Merriweather", Georgia, serif;
-  font-weight: bold;
-  padding: 1em 0 0.5em;
-}
-@media screen and (min-width: 760px) {
-  form legend {
-    padding-bottom: 1em;
-  }
+  padding: 1em 0 0.2em;
 }
 @media screen and (min-width: 760px) {
   form .input-div {
@@ -564,7 +558,7 @@ form legend {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    justify-content: spacebetween;
+    justify-content: space-between;
     align-items: baseline;
   }
 }
@@ -636,27 +630,6 @@ form select:focus {
     display: inline-block;
     width: 70%;
   }
-}
-form .news-select {
-  width: 95%;
-  max-width: 720px;
-  margin: 0 auto;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  justify-content: spacebetween;
-  align-items: baseline;
-}
-form .news-select label {
-  font-size: 1em;
-  margin: 0.1em 0;
-}
-form .news-select input[type=checkbox],
-form .news-select input[type=radio] {
-  margin-right: 1em;
-}
-form p {
-  text-align: left;
 }
 form textarea {
   background-color: rgba(170, 185, 199, 0.3);
