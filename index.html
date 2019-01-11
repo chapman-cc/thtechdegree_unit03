@@ -22,38 +22,38 @@
 
     <form action="post.html" class="form" id="form" method="post" name="newsletter_form" target="_self" autocomplete="on">
         <fieldset class="contact-section">
-            <legend class="form-title">Contact Information</legend>
-            <!-- TODO: all input lacks id -->
-            <!-- TODO: the label’s “for” attribute should match the input’s unique id. -->
+            <legend style="display: none">Contact Information</legend>
+            <h2 class="form-title">Contact Information</h2>
+
             <div class="input-div">
-                <label for="full_name" class="label">Full Name</label>
-                <input type="text" class="textinput full-name" name="full_name" placeholder="Required" required>
+                <label for="fullname" class="label">Full Name</label>
+                <input type="text" class="textinput full-name" id="fullname" name="user_name" placeholder="Required" required>
             </div>
 
             <div class="input-div">
                 <label for="email" class="label">Email Address</label>
-                <input type="email" class="textinput email" name="email" placeholder="Required" required>
+                <input type="email" class="textinput email" id="email" name="user_email" placeholder="Required" required>
             </div>
 
             <div class="input-div">
                 <label for="phone_num" class="label">Phone Number</label>
-                <input type="tel" class="textinput phone-num" name="phone_num">
+                <input type="tel" class="textinput phone-num" id="phone_num" name="user_tel">
             </div>
 
             <div class="input-div">
                 <label for="address" class="label">Street Address</label>
-                <input type="text" class="textinput street-add" name="address">
+                <input type="text" class="textinput street-add" id="address" name="user_add">
             </div>
 
             <div class="input-div">
                 <label for="city" class="label ">City</label>
-                <input type="text" class="textinput city" name="city">
+                <input type="text" class="textinput city" id="city" name="user_city">
             </div>
 
             <div class="input-div">
                 <label for="state" class="textinput label">State</label>
 
-                <select name="state" class="state">
+                <select id="state" class="state" name="user_state">
                     <option value="" disabled selected>Choose your state</option>
                     <optgroup label="US states">
                         <option value="AL">Alabama</option>
