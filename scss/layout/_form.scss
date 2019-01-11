@@ -27,19 +27,13 @@ form {
         }
     }
 
-    .input {
+    .input-div {
         @media screen and (min-width: 760px) {
             margin-bottom: 1em;
-            display: flex;
-            flex-wrap: nowrap;
-            flex-direction: row;
-            justify-content: space-between;
-            align-items: baseline;
+            @include flex-mixin($justify: spacebetween, $align: baseline);
         }
     }
-    // ----- Variable for length of input text box for desktop display -----
-    $txtbx-length: 70%;
-    //----------------------------------------------------------------------
+
     .label {
         display: block;
         @include label-mixin;
@@ -80,18 +74,10 @@ form {
         }
     }
 
-    select {
-        color: $color-1-gray;
-        font: oblique 1em $font-stack-serif;
-    }
 
     .news-select {
         @include center-container(95%);
-        display: flex;
-        flex-wrap: nowrap;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: baseline;
+        @include flex-mixin($direction:column, $justify: spacebetween, $align: baseline);
 
         label {
             font-size: 1em;
