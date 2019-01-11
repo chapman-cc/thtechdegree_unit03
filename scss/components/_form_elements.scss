@@ -25,8 +25,7 @@
     }
     @content;
 }
-@mixin button-mixin {
-    $butt-color: $color-2;
+@mixin button-mixin ($butt-color: $color-2) {
     display: block;
     height: 3em;
     border-style: hidden;
