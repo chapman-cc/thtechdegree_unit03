@@ -1,4 +1,7 @@
 form {
+    // ----- form specific variables -----
+    $txtbx-length: 70%;
+    //----------------------------------------------------------------------
     @include center-container(90%);
 
     .contact-section {
