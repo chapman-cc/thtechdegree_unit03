@@ -19,6 +19,9 @@
         text-align: left;
         font: oblique 0.8em $font-stack-serif;
     }
+    &[placeholder=Required]::placeholder {
+        text-align: right;
+    }
 
     &:focus {
         background-color: rgba($color-1-light50, 1);

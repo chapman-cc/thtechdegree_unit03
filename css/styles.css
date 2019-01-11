@@ -592,8 +592,11 @@ form input.textinput {
 }
 form input.textinput::placeholder {
   color: #393939;
-  text-align: right;
+  text-align: left;
   font: oblique 0.8em "Merriweather", Georgia, serif;
+}
+form input.textinput[placeholder=Required]::placeholder {
+  text-align: right;
 }
 form input.textinput:focus {
   background-color: #aab9c7;
@@ -628,6 +631,9 @@ form select::placeholder {
   text-align: left;
   font: oblique 0.8em "Merriweather", Georgia, serif;
 }
+form select[placeholder=Required]::placeholder {
+  text-align: right;
+}
 form select:focus {
   background-color: #aab9c7;
 }
@@ -649,6 +655,9 @@ form textarea::placeholder {
   color: #393939;
   text-align: left;
   font: oblique 0.8em "Merriweather", Georgia, serif;
+}
+form textarea[placeholder=Required]::placeholder {
+  text-align: right;
 }
 form textarea:focus {
   background-color: #aab9c7;
