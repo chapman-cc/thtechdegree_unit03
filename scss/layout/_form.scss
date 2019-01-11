@@ -17,14 +17,11 @@ form {
         padding: 0;
     }
 
-    legend {
-        font-size: 1.25em;
+    .legend-small {
+        color: $color-1-light50;
         font-family: $font-stack-serif;
-        font-weight: bold;
-        padding: 1em 0 0.5em;
-        @media screen and (min-width: 760px) {
-            padding-bottom: 1em;
-        }
+
+        padding: 1em 0 0.2em
     }
 
     .input-div {
