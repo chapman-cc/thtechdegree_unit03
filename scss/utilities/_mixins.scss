@@ -3,7 +3,7 @@
 // =========================================
 @mixin center-container($percent: 90%) {
     width: $percent;
-    max-width: $max-width;
+    max-width: 720px;
     margin: 0 auto;
     @content;
 }
