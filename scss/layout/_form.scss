@@ -12,6 +12,10 @@ form {
         }
     }
 
+    p {
+        text-align: left;
+    }
+
     fieldset {
         border: hidden;
         padding: 0;
@@ -74,7 +78,6 @@ form {
         }
     }
 
-
     .news-select {
         @include center-container(95%);
         @include flex-mixin($direction:column, $justify: spacebetween, $align: baseline);
@@ -88,10 +91,6 @@ form {
         input[type=radio] {
             margin-right: 1em;
         }
-    }
-
-    p {
-        text-align: left;
     }
 
     textarea {
