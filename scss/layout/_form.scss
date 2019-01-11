@@ -78,21 +78,6 @@ form {
         }
     }
 
-    .news-select {
-        @include center-container(95%);
-        @include flex-mixin($direction:column, $justify: space-between, $align: baseline);
-
-        label {
-            font-size: 1em;
-            margin: 0.1em 0;
-        }
-
-        input[type=checkbox],
-        input[type=radio] {
-            margin-right: 1em;
-        }
-    }
-
     textarea {
         @include input-mixin {
             width: 100%;
