@@ -34,7 +34,7 @@ form {
     .input-div {
         @media screen and (min-width: 760px) {
             margin-bottom: 1em;
-            @include flex-mixin($justify: spacebetween, $align: baseline);
+            @include flex-mixin($justify: space-between, $align: baseline);
         }
     }
 
@@ -80,7 +80,7 @@ form {
 
     .news-select {
         @include center-container(95%);
-        @include flex-mixin($direction:column, $justify: spacebetween, $align: baseline);
+        @include flex-mixin($direction:column, $justify: space-between, $align: baseline);
 
         label {
             font-size: 1em;
