@@ -559,12 +559,12 @@ form legend {
   }
 }
 @media screen and (min-width: 760px) {
-  form .input {
+  form .input-div {
     margin-bottom: 1em;
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: spacebetween;
     align-items: baseline;
   }
 }
@@ -586,14 +586,17 @@ form input.textinput {
   background-color: rgba(170, 185, 199, 0.3);
   border-style: hidden;
   border-radius: 10px;
-  transition: background 500ms ease-out;
   padding: 1em;
+  transition: background 500ms ease-out;
   width: 100%;
 }
 form input.textinput::placeholder {
   color: #393939;
   text-align: right;
   font: oblique 0.8em "Merriweather", Georgia, serif;
+}
+form input.textinput:focus {
+  background-color: #aab9c7;
 }
 form input.textinput.zip {
   width: 60%;
@@ -614,16 +617,19 @@ form select {
   background-color: rgba(170, 185, 199, 0.3);
   border-style: hidden;
   border-radius: 10px;
-  transition: background 500ms ease-out;
   padding: 1em;
+  transition: background 500ms ease-out;
   width: 100%;
   color: #393939;
   font: oblique 1em "Merriweather", Georgia, serif;
 }
 form select::placeholder {
   color: #393939;
-  text-align: right;
+  text-align: left;
   font: oblique 0.8em "Merriweather", Georgia, serif;
+}
+form select:focus {
+  background-color: #aab9c7;
 }
 @media screen and (min-width: 760px) {
   form select {
@@ -631,18 +637,14 @@ form select::placeholder {
     width: 70%;
   }
 }
-form select {
-  color: #393939;
-  font: oblique 1em "Merriweather", Georgia, serif;
-}
 form .news-select {
   width: 95%;
   max-width: 720px;
   margin: 0 auto;
   display: flex;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: spacebetween;
   align-items: baseline;
 }
 form .news-select label {
@@ -660,13 +662,14 @@ form textarea {
   background-color: rgba(170, 185, 199, 0.3);
   border-style: hidden;
   border-radius: 10px;
+  padding: 1em;
   transition: background 500ms ease-out;
   width: 100%;
 }
 form textarea::placeholder {
   color: #393939;
   text-align: left;
-  font: oblique 1em "Merriweather", Georgia, serif;
+  font: oblique 0.8em "Merriweather", Georgia, serif;
 }
 form textarea:focus {
   background-color: #aab9c7;
