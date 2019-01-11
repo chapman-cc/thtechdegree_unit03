@@ -48,7 +48,7 @@ form {
 
     input.textinput {
         display: block;
-        @include input-mixin {
+        @include input-mixin (right) {
             width: 100%;
 
             &.zip {
@@ -106,7 +106,7 @@ form {
     }
 
     textarea {
-        @include textbox-mixin {
+        @include input-mixin {
             width: 100%;
         };
     }
