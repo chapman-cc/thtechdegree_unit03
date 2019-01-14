@@ -76,7 +76,13 @@ form {
             width: $txtbx-length;
         }
     }
-
+    .suggest-txtfield {
+        display: inline-block;
+        color: $color-1-light50;
+        font: 1em $font-stack-serif;
+        padding-bottom: 0.2em;
+        margin-top: 1em;
+    }
     textarea {
         @include input-mixin {
             width: 100%;

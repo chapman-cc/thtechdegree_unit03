@@ -538,7 +538,7 @@ form .contact-section {
   padding-bottom: 2em;
   border-bottom: 2px solid #2d3945;
 }
-@media screen and (min-width: 760px) {
+@media screen and (min-width: 768px) {
   form .contact-section {
     margin-bottom: 2em;
   }
@@ -558,7 +558,7 @@ form legend.legend-small {
   font: 1em "Merriweather", Georgia, serif;
   padding-bottom: 0.2em;
 }
-@media screen and (min-width: 760px) {
+@media screen and (min-width: 768px) {
   form .input-div {
     margin-bottom: 1em;
     display: flex;
@@ -575,7 +575,7 @@ form .label {
   font-size: 0.8em;
   margin: 1em 0 0.2em;
 }
-@media screen and (min-width: 760px) {
+@media screen and (min-width: 768px) {
   form .label {
     font-size: 1em;
     width: calc(100% - 70%);
@@ -604,13 +604,13 @@ form input.textinput:focus {
 form input.textinput.zip {
   width: 60%;
 }
-@media screen and (min-width: 760px) {
+@media screen and (min-width: 768px) {
   form input.textinput.zip {
     width: 30%;
     margin-right: auto;
   }
 }
-@media screen and (min-width: 760px) {
+@media screen and (min-width: 768px) {
   form input.textinput {
     display: inline-block;
     width: 70%;
@@ -637,11 +637,18 @@ form select[placeholder=Required]::placeholder {
 form select:focus {
   background-color: #aab9c7;
 }
-@media screen and (min-width: 760px) {
+@media screen and (min-width: 768px) {
   form select {
     display: inline-block;
     width: 70%;
   }
+}
+form .suggest-txtfield {
+  display: inline-block;
+  color: #aab9c7;
+  font: 1em "Merriweather", Georgia, serif;
+  padding-bottom: 0.2em;
+  margin-top: 1em;
 }
 form textarea {
   background-color: rgba(170, 185, 199, 0.3);
@@ -681,7 +688,7 @@ form button:hover {
 form button:active {
   background-color: #1f514e;
 }
-@media screen and (min-width: 760px) {
+@media screen and (min-width: 768px) {
   form button {
     width: 50%;
     margin-left: auto;
