@@ -7,7 +7,7 @@ form {
     .contact-section {
         padding-bottom: 2em;
         border-bottom: 2px solid $color-1;
-        @media screen and (min-width: 760px) {
+        @media screen and (min-width: 768px) {
             margin-bottom: 2em;
         }
     }
@@ -31,7 +31,7 @@ form {
     }
 
     .input-div {
-        @media screen and (min-width: 760px) {
+        @media screen and (min-width: 768px) {
             margin-bottom: 1em;
             @include flex-mixin($justify: space-between, $align: baseline);
         }
@@ -40,7 +40,7 @@ form {
     .label {
         display: block;
         @include label-mixin;
-        @media screen and (min-width: 760px) {
+        @media screen and (min-width: 768px) {
             font-size: 1em;
             width: calc(100% - #{$txtbx-length});
         }
@@ -53,13 +53,13 @@ form {
 
             &.zip {
                 width: 60%;
-                @media screen and (min-width: 760px) {
+                @media screen and (min-width: 768px) {
                     width: 30%;
                     margin-right: auto;
                 }
             }
         }
-        @media screen and (min-width: 760px) {
+        @media screen and (min-width: 768px) {
             display: inline-block;
             width: $txtbx-length;
         }
@@ -71,7 +71,7 @@ form {
             color: $color-1-gray;
             font: oblique 1em $font-stack-serif;
         }
-        @media screen and (min-width: 760px) {
+        @media screen and (min-width: 768px) {
             display: inline-block;
             width: $txtbx-length;
         }
@@ -87,7 +87,7 @@ form {
         @include button-mixin;
         margin: 1.5em 0;
         width: 100%;
-        @media screen and (min-width: 760px) {
+        @media screen and (min-width: 768px) {
             width: 50%;
             margin-left: auto;
             margin-right: auto;
