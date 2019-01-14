@@ -595,7 +595,7 @@ form input.textinput::placeholder {
   text-align: left;
   font: oblique 0.8em "Merriweather", Georgia, serif;
 }
-form input.textinput[placeholder=Required]::placeholder {
+form input.textinput[Required]::placeholder {
   text-align: right;
 }
 form input.textinput:focus {
@@ -631,7 +631,7 @@ form select::placeholder {
   text-align: left;
   font: oblique 0.8em "Merriweather", Georgia, serif;
 }
-form select[placeholder=Required]::placeholder {
+form select[Required]::placeholder {
   text-align: right;
 }
 form select:focus {
@@ -663,7 +663,7 @@ form textarea::placeholder {
   text-align: left;
   font: oblique 0.8em "Merriweather", Georgia, serif;
 }
-form textarea[placeholder=Required]::placeholder {
+form textarea[Required]::placeholder {
   text-align: right;
 }
 form textarea:focus {

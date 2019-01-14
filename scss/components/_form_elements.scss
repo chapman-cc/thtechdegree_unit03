@@ -19,7 +19,7 @@
         text-align: left;
         font: oblique 0.8em $font-stack-serif;
     }
-    &[placeholder=Required]::placeholder {
+    &[Required]::placeholder {
         text-align: right;
     }
 
